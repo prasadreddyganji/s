@@ -29,9 +29,10 @@
     <plugins>
       <plugin>
         <groupId>org.apache.tomcat.plugins</groupId>
-        <artifactId>tomcat8.5-maven-plugin</artifactId>
-        <version>2.0.2</version>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
         <configuration>
+          <url>http://52.27.38.48:8080/manager/text</url>
           <server>myserver</server>
           <path>/dev_test</path>
         </configuration>
