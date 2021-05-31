@@ -32,7 +32,6 @@
         <artifactId>tomcat8.5-maven-plugin</artifactId>
         <version>2.0.2</version>
         <configuration>
-          <url>http://localhost:5050/manager/text</url>
           <server>myserver</server>
           <path>/dev_test</path>
         </configuration>
