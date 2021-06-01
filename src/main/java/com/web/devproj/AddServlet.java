@@ -32,6 +32,40 @@ public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOExce
 		 else if(j.equals("Dinar"))
 			 result = 0.30 * val;
 	 }
+	  else if(i.equals("Rupee"))
+	 {
+		 if(j.equals("Dollar"))
+			 result = val/75;
+		 if(j.equals("Rupee"))
+			 result = val;
+		 else if(j.equals("Euro"))
+			 result = 0.011 * val;
+		 else if(j.equals("Dinar"))
+			 result = 0.0041 * val;		 
+	 }
+	 else if(i.equals("Dinar"))
+	 {
+		 if(j.equals("Dollar"))
+			 result = 3.32*val;
+		 if(j.equals("Rupee"))
+			 result = 241.80*val;
+		 else if(j.equals("Euro"))
+			 result = 2.72 * val;
+		 else if(j.equals("Dinar"))
+			 result =  val;		 
+	 }
+	 else if(i.equals("Euro"))
+	 {
+		 if(j.equals("Dollar"))
+			 result = 1.22*val;
+		 if(j.equals("Rupee"))
+			 result = 88.95*val;
+		 else if(j.equals("Euro"))
+			 result =  val;
+		 else if(j.equals("Dinar"))
+			 result = 0.37 * val;		 
+	 }
+	 
 		 /*out.println("<!DOCTYPE html>\r\n"
 		 		+ "<html>\r\n"
 		 		+ "<head>\r\n"
